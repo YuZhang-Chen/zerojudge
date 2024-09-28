@@ -1,0 +1,16 @@
+num=[]
+n=int(input())
+while n!=0:
+    num.append(n)
+    n=int(input())
+s5=num.count(5)
+s4=num.count(4)
+s3=num.count(3)
+s2=num.count(2)
+s1=num.count(1)
+print('5 (%2d) |%s'%(s5,'='*s5))
+print('4 (%2d) |%s'%(s4,'='*s4))
+print('3 (%2d) |%s'%(s3,'='*s3))
+print('2 (%2d) |%s'%(s2,'='*s2))
+print('1 (%2d) |%s'%(s1,'='*s1))
+print('Average rating: %.4f'%(sum(num)/len(num)))
